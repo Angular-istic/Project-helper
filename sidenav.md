@@ -46,7 +46,7 @@ body {
 
 ## Commands used
 
-To generate components : 
+### To generate components : 
 
 `ng g c body --skip-tests true` 
 
@@ -65,3 +65,24 @@ To generate components :
 `ng g c media --skip-tests true` 
 
 `ng g c settings --skip-tests true` 
+
+# Sidenav with Multi Level Menu
+
+## Commands used
+
+### To generate components :
+
+`ng g c sublevel-menu --inline-template --inline-style --flat true`
+
+`ng g c coupen-list --module coupens`
+
+`ng g c product-level-three-one --module products`
+
+`ng g c product-level-three-two --module products`
+
+### To generate modules:
+
+`ng g m coupens --routing --flat true`
+
+`ng g m products --routing --flat true`
+
