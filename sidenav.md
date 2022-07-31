@@ -86,3 +86,67 @@ body {
 
 `ng g m products --routing --flat true`
 
+
+# Sidenav with Toolbar
+
+## styles.scss
+
+```scss
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f7fa;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #fff;
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #e6edef;
+    color: #495057;
+
+    .card-head {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #edf1f7;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .card-body {
+        padding: 1rem 1.5rem; 
+    }
+}
+```
+
+## CDK Module Import
+
+```ts
+import { OverlayModule } from '@angular/cdk/overlay'
+import { CdkMenuModule } from '@angular/cdk/menu'
+```
+
+## Commands used
+
+### Angular CDK :
+
+`npm i @angular/cdk`
+
+### To generate components :
+
+`ng g c header`
+
+## Assets
+
+[Image link](https://github.com/Angular-istic/Project-helper/tree/main/assets/sidenav)
